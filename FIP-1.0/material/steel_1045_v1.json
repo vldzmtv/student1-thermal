@@ -1,0 +1,107 @@
+{
+  "material_id": "steel_1045_v1",
+  "name": "Steel 45 / AISI 1045, normalized",
+  "class": "steel",
+  "model_values": true,
+  "units": "SI",
+  "temperature_unit": "K",
+  "composition_wt_percent": {
+    "C": 0.45, "Mn": 0.75, "Si": 0.25, "P": 0.020, "S": 0.025,
+    "Cr": 0.15, "Ni": 0.10, "Mo": 0.05, "Cu": 0.10, "V": 0.0
+  },
+  "derived": {
+    "CE_IIW": 0.6283,
+    "CE_IIW_formula": "C + Mn/6 + (Cr+Mo+V)/5 + (Ni+Cu)/15",
+    "Ms_andrews_degC": 321.9,
+    "Ms_andrews_formula": "539 - 423C - 30.4Mn - 17.7Ni - 12.1Cr - 7.5Mo",
+    "weldability_note": "CE ~ 0.63: limited weldability, open recommendations suggest preheat 150-250 degC"
+  },
+  "solid": {
+    "rho_kg_m3": 7850.0,
+    "T_K":            [293.15, 473.15, 673.15, 873.15, 973.15, 1023.15, 1073.15, 1273.15, 1473.15],
+    "lambda_W_mK":    [48.0, 45.0, 40.0, 34.0, 30.0, 29.0, 28.0, 29.0, 30.0],
+    "cp_J_kgK":       [470.0, 500.0, 540.0, 610.0, 700.0, 850.0, 640.0, 620.0, 640.0],
+    "emissivity": 0.7,
+    "h_W_m2K": 15.0,
+    "level_A_constant": {
+      "lambda_W_mK": 48.0, "cp_J_kgK": 470.0,
+      "rho_cp_J_m3K": 3.6895e6, "alpha_m2_s": 1.301e-5
+    },
+    "cp_peak_note": "peak near 1023 K is the magnetic anomaly and alpha->gamma transformation, do not smooth it away"
+  },
+  "phase_change": {
+    "T_solidus_K": 1723.15,
+    "T_liquidus_K": 1763.15,
+    "T_melt_K": 1743.15,
+    "freezing_range_K": 40.0,
+    "latent_heat_J_kg": 2.6e5
+  },
+  "liquid": {
+    "rho_kg_m3": 7000.0,
+    "mu_Pa_s": 6.0e-3,
+    "nu_m2_s": 8.571e-7,
+    "lambda_W_mK": 30.0,
+    "cp_J_kgK": 700.0,
+    "alpha_m2_s": 6.122e-6,
+    "Pr": 0.14,
+    "beta_1_K": 1.2e-4,
+    "rho_cp_J_m3K": 4.9e6,
+    "T_boil_K": 3133.15,
+    "alpha_note": "in buoyantBoussinesq solvers alpha = nu/Pr, NOT lambda; alpha_s/alpha_l = 2.13"
+  },
+  "surface_tension": {
+    "model": "Sahoo-DebRoy-McNallan, Fe-S",
+    "sigma_m_N_m": 1.943,
+    "A_N_mK": 4.3e-4,
+    "Gamma_s_kmol_m2": 1.3e-8,
+    "k1": 3.18e-3,
+    "dH0_J_kmol": -1.66e8,
+    "R_J_kmolK": 8314.4,
+    "a_S_base_wt_percent": 0.025,
+    "a_S_series_wt_percent": [0.002, 0.006, 0.015, 0.025, 0.030],
+    "activity_note": "a_S approximated by wt percent; coefficients are for pure Fe-S, see ASSUMPTIONS.md"
+  },
+  "mechanical": {
+    "T_K":              [293.15, 473.15, 673.15, 873.15, 1073.15, 1273.15, 1473.15, 1673.15],
+    "E_Pa":             [2.10e11, 2.00e11, 1.85e11, 1.55e11, 1.10e11, 6.0e10, 2.0e10, 5.0e9],
+    "sigma_y_Pa":       [3.40e8, 3.00e8, 2.50e8, 1.70e8, 7.0e7, 3.0e7, 1.0e7, 3.0e6],
+    "alpha_sec_1_K":    [11.5e-6, 12.3e-6, 13.2e-6, 14.0e-6, 14.6e-6, 15.0e-6, 15.4e-6, 15.8e-6],
+    "alpha_type": "secant",
+    "alpha_reference_T_K": 293.15,
+    "nu": 0.29,
+    "nu_high_T": {"from_T_K": 873.15, "to_T_K": 1473.15, "nu_end": 0.40},
+    "hardening_modulus_Pa": 1.5e9,
+    "hardening_model": "bilinear isotropic",
+    "T_cut_K": 1473.15,
+    "T_cut_series_K": [1373.15, 1473.15, 1573.15],
+    "annealing_note": "above T_cut: E and sigma_y collapse, accumulated plastic strain is reset"
+  },
+  "transformation": {
+    "Ac1_K": 1000.15,
+    "Ac3_K": 1053.15,
+    "Ms_K": 595.15,
+    "alpha_KM_1_K": 0.011,
+    "beta_transformation_linear": 4.0e-3,
+    "beta_range": [3.3e-3, 5.0e-3],
+    "dV_over_V_range": [0.010, 0.015],
+    "HV_base": 230.0,
+    "HV_martensite": 630.0,
+    "temper_window_K": [773.15, 1000.15],
+    "temper_factor": 0.9,
+    "TRIP_note": "out of scope; kappa_trip ~ 5e-5 1/MPa, discuss what is lost"
+  },
+  "verification_constants": {
+    "note": "round constants used ONLY in the four analytic tests of S3",
+    "E_Pa": 2.10e11, "nu": 0.30, "alpha_1_K": 12.0e-6,
+    "sigma_y_Pa_artificial": 5.0e9
+  },
+  "open_sources_to_verify": [
+    "ASM Handbook Vol.1 (Properties and Selection: Irons, Steels)",
+    "ASM Handbook Vol.9 (Welding)",
+    "Andrews K.W. (1965), empirical Ms formula",
+    "Koistinen D.P., Marburger R.E. (1959), Acta Metallurgica",
+    "Sahoo P., DebRoy T., McNallan M.J. (1988), Metall. Trans. B",
+    "Carslaw H.S., Jaeger J.C., Conduction of Heat in Solids",
+    "open CCT diagrams for AISI 1045 / steel 45"
+  ]
+}

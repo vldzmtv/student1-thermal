@@ -1,0 +1,19 @@
+{
+  "case_id": "R01",
+  "frame": "part_axis_v1",
+  "units": "SI",
+  "bore_diameter_m": 0.550,
+  "outer_diameter_m": 0.582,
+  "R_in_m": 0.275,
+  "R_out_m": 0.291,
+  "wall_m": 0.016,
+  "height_m": 0.040,
+  "origin": "on the axis, at the bottom face; z along the axis; phi = atan2(y,x)",
+  "clad_surface": "bore",
+  "clad_sector_deg": [0.0, 30.0],
+  "track_z_m": 0.020,
+  "nominal_finished_radius_m": 0.275,
+  "grid_id": "G-R01",
+  "level_A_note": "clad layer is NOT modeled geometrically at level A; h_clad enters the stock criterion analytically",
+  "mass_kg_approx": 8.9
+}

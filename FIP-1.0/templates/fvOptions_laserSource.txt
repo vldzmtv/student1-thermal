@@ -1,0 +1,45 @@
+// CANONICAL moving Gaussian source. Identical for S1, S2 and S3-own-CFD.
+// Parameters are read from constant/laserProperties -- never hardcode them.
+// SIGN of eqn.source() must be verified on the adiabatic cube (S1 case 00).
+laserSource
+{
+    type            coded;
+    selectionMode   all;
+    field           T;
+    name            laserSource;
+    codeInclude     #{ #include "fvCFD.H" #include "IOdictionary.H" #};
+    codeOptions
+    #{
+        -I$(LIB_SRC)/finiteVolume/lnInclude \
+        -I$(LIB_SRC)/meshTools/lnInclude
+    #};
+    codeLibs        #{ -lfiniteVolume -lmeshTools #};
+    codeAddSup
+    #{
+        const scalar t = mesh_.time().value();
+        IOdictionary lp(IOobject("laserProperties", mesh_.time().constant(),
+                          mesh_, IOobject::MUST_READ, IOobject::NO_WRITE));
+        const scalar P=lp.get<scalar>("power"), eta=lp.get<scalar>("absorptivity");
+        const scalar w=lp.get<scalar>("beamRadius"), dlt=lp.get<scalar>("layerDepth");
+        const scalar v=lp.get<scalar>("speed"), x0=lp.get<scalar>("xStart");
+        const scalar y0=lp.get<scalar>("yTrack"), zS=lp.get<scalar>("zSurface");
+        const scalar rc=lp.get<scalar>("rhoCp");
+        const scalar tOn=lp.getOrDefault<scalar>("tOn",0.0);
+        const scalar tOff=lp.getOrDefault<scalar>("tOff",GREAT);
+        const bool divR=lp.getOrDefault<bool>("divideByRhoCp",true);
+        if (t<tOn || t>tOff) return;
+        const scalar xs=x0+v*(t-tOn);
+        const scalar q0=2.0*eta*P/(constant::mathematical::pi*sqr(w));
+        const scalarField& V=mesh_.V(); const vectorField& C=mesh_.C();
+        scalarField& src=eqn.source();
+        forAll(V,celli)
+        {
+            const vector& cc=C[celli];
+            if (cc.z()<zS-dlt) continue;
+            const scalar r2=sqr(cc.x()-xs)+sqr(cc.y()-y0);
+            if (r2>16.0*sqr(w)) continue;
+            const scalar qv=q0*exp(-2.0*r2/sqr(w))/dlt;
+            src[celli]+=V[celli]*(divR ? qv/rc : qv);
+        }
+    #};
+}

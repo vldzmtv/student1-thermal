@@ -1,0 +1,14 @@
+[0-9]*/
+processor*/
+postProcessing/
+dynamicCode/
+log.*
+*.vtk
+*.foam
+!0/
+__pycache__/
+*.pyc
+out/*/fields/
+out/*/grid_T.npz
+.DS_Store
+!cases/[0-9][0-9]_*/

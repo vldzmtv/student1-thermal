@@ -1,0 +1,42 @@
+{
+  "regime_id": "REG-01",
+  "case_id": "P01",
+  "description": "model base regime, single straight track on plate",
+  "units": "SI",
+  "material": {"substrate_id": "steel_1045_v1", "clad_id": "steel_316L_v1"},
+  "laser": {
+    "power_W": 1200.0,
+    "wavelength_nm": 1070.0,
+    "spot_convention": "1/e2_intensity",
+    "spot_diameter_m": 0.0030,
+    "beam_radius_m": 0.0015,
+    "profile": "gaussian",
+    "absorptivity": 0.35,
+    "absorptivity_basis": "model value, open range for steel 0.30-0.50",
+    "absorption_layer_m": 2.0e-4,
+    "tilt_deg": 0.0
+  },
+  "motion": {
+    "speed_m_s": 0.010,
+    "path_type": "line",
+    "tracks": [{"track_id": 1, "t_on_s": 0.0, "t_off_s": 2.0,
+                "start_m": [0.010, 0.0, 0.016], "end_m": [0.030, 0.0, 0.016]}],
+    "pitch_m": 0.0015
+  },
+  "thermal": {
+    "preheat_K": 423.15,
+    "ambient_K": 293.15,
+    "h_W_m2K": 15.0,
+    "emissivity": 0.7,
+    "t_end_s": 20.0,
+    "end_condition": "T_max_K <= ambient_K + 2"
+  },
+  "expected": {
+    "I0_W_m2": 1.19e8,
+    "tau_interaction_s": 0.3,
+    "diffusion_length_m": 0.0040,
+    "linear_energy_J_mm": 120.0,
+    "cube_slope_K_s": 113.8,
+    "slab_power_2d_W": 223.4
+  }
+}

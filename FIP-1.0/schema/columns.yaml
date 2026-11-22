@@ -1,0 +1,41 @@
+# Mandatory CSV columns. SI units, unit suffixes in names, 'nan' for missing.
+common:
+  csv: {encoding: utf-8, separator: ",", decimal: ".", missing: "nan"}
+
+probes_thermal:
+  file: probes.csv
+  columns: [run_id, time_s, probe_id, x_m, y_m, z_m, T_K]
+
+metrics_thermal:
+  file: metrics.csv
+  columns: [run_id, probe_id, T_peak_K, t_peak_s, t85_s, t_1150_1000_s,
+            coolrate_800_K_s, coolrate_300_K_s, T_min_after_Ms_K, above_Ac3_s]
+
+summary_thermal:
+  file: results/summary.csv
+  columns: [run_id, power_W, speed_m_s, absorptivity, preheat_K,
+            melt_indicator_width_m, melt_indicator_depth_m, HAZ_width_m, t85_P01_s]
+
+metrics_pool:
+  file: metrics_pool.csv
+  columns: [run_id, regime_id, sulfur_wt_percent, L_m, D_m, W_m, D_over_L,
+            D_over_W, V_melt_m3, u_max_m_s, T_max_K, Ma, Pe, Re, G_K_m, R_m_s,
+            G_over_R_K_s_m2, G_dot_R_K_s, t85_P01_s, fully_solidified]
+  note: "in 2D W_m and D_over_W are nan"
+
+metrics_mech:
+  file: metrics_mech.csv
+  columns: [run_id, case_id, state, clamping, thermal_source, u_r_max_m,
+            dD_mean_m, ovality_m, ecc_m, A3_m, A4_m, conicity_m,
+            sigma1_max_Pa, sigmaVM_max_Pa, f_M_max, HV_max, t_rem_min_m,
+            K1, K2, K3, K4, K5, K6]
+  enums:
+    state: [clamped, released, machined]
+    clamping: [free, 3jaw, chuck, face]
+    K: [pass, fail, n/a]
+
+npz:
+  thermal: {times_s: "(nt,)", T_K: "(nt,np) float32"}
+  pool: {times_s: "(nt,)", point_id: "(np,)", T_K: "(nt,np)", liquidFraction: "(nt,np)"}
+  mech: {times_s: "(nt,)", u_m: "(nt,np,3)", sigmaEq_Pa: "(nt,np)"}
+  mech_final: {epsPlEq: "(np,)", f_M: "(np,)", HV: "(np,)", sigma1_Pa: "(np,)"}

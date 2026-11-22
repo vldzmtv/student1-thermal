@@ -1,0 +1,37 @@
+{
+  "units": "SI",
+  "basis": "ISO 286-1 / GOST 25346, MODEL part, not a customer drawing",
+  "size_range_mm": [500, 630],
+  "IT_grades_m": {"IT6": 4.4e-5, "IT7": 7.0e-5, "IT8": 1.10e-4, "IT9": 1.75e-4},
+  "verify_note": "student must confirm these values against the standard table (criterion A0)",
+  "model_part": {
+    "feature": "bore",
+    "nominal_diameter_m": 0.550,
+    "fit": "H7",
+    "IT_m": 7.0e-5,
+    "upper_deviation_m": 7.0e-5,
+    "lower_deviation_m": 0.0,
+    "roundness_tolerance_m": 3.5e-5,
+    "roundness_basis": "model assumption 0.5*IT7"
+  },
+  "machining": {
+    "undercut_per_side_m": 5.0e-4,
+    "min_remaining_clad_m": 2.0e-4,
+    "h_clad_m": 8.0e-4,
+    "nominal_radius_m": 0.275
+  },
+  "criteria": {
+    "K1_stock_formula": "abs(u_r)_max <= h_clad - undercut - t_min",
+    "K1_limit_m": 1.0e-4,
+    "K2_ovality_after_machining_m": 2.1e-5,
+    "K2_basis": "0.3*IT7",
+    "K3_min_remaining_clad_m": 2.0e-4,
+    "K4_no_zone_with": "f_M > 0.5 AND sigma1 > 0.5*sigma_y",
+    "K5_HAZ_hardness_max_HV": 350.0,
+    "K6_metrology_T_K": 293.15
+  },
+  "metrology_sensitivity": {
+    "alpha_1_K": 12.0e-6,
+    "delta_T_for_IT7_on_550mm_K": 10.6
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "case_id": "P01",
+  "frame": "plate_v1",
+  "units": "SI",
+  "full_domain_m": [0.040, 0.024, 0.016],
+  "modeled_half_m": [0.040, 0.012, 0.016],
+  "symmetry_plane": "y=0",
+  "symmetry_factor": 2.0,
+  "irradiated_surface_z_m": 0.016,
+  "origin": "corner of the bottom face, z up",
+  "track": {"along": "x", "y_m": 0.0, "x_start_m": 0.010, "x_end_m": 0.030},
+  "pool_subdomain_m": {"x": [0.004, 0.036], "y": [0.0, 0.006], "z": [0.010, 0.016]},
+  "grid_id": "G-P01",
+  "slab_thickness_2d_m": 1.0e-3
+}

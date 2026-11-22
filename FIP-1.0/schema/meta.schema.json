@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FIP-1.0 run meta",
+  "type": "object",
+  "required": ["schema_version", "run_id", "fip_version", "producer", "module",
+               "case_id", "material_id", "frame", "units", "grid_id",
+               "grid_points", "n_times", "solver", "verification"],
+  "properties": {
+    "schema_version": {"const": "2.0.0"},
+    "fip_version": {"const": "FIP-1.0"},
+    "producer": {"enum": ["student1", "student2", "student3"]},
+    "module": {"enum": ["thermal", "pool", "mech"]},
+    "case_id": {"enum": ["P01", "R01"]},
+    "material_id": {"const": "steel_1045_v1"},
+    "frame": {"enum": ["plate_v1", "part_axis_v1"]},
+    "units": {"const": "SI"},
+    "grid_id": {"enum": ["G-P01", "G-R01"]},
+    "grid_points": {"type": "integer", "enum": [72900, 37800, 2015, 26195]},
+    "n_times": {"type": "integer", "minimum": 1},
+    "symmetry_factor": {"type": "number", "minimum": 1},
+    "run_id": {"type": "string",
+               "pattern": "^s[123]-(p01|r01)-[a-z0-9]+-m[0-9]{2}-v[0-9]+$"},
+    "verification": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {"enum": ["draft", "verified", "accepted", "rejected"]}
+      }
+    }
+  },
+  "allOf": [
+    {"if": {"properties": {"module": {"const": "pool"}}},
+     "then": {"required": ["grid_mode", "slab_thickness_m", "physics"],
+              "properties": {"grid_mode": {"enum": ["POOL2D", "POOL3D"]}}}},
+    {"if": {"properties": {"module": {"const": "mech"}}},
+     "then": {"required": ["thermal_source", "state", "clamping", "stock",
+                           "physics"],
+              "properties": {
+                "thermal_source": {"enum": ["fixture", "own_cfd", "composed"]},
+                "state": {"enum": ["clamped", "released", "machined"]},
+                "clamping": {"enum": ["free", "3jaw", "chuck", "face"]}}}}
+  ]
+}

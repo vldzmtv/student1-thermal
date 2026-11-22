@@ -1,0 +1,35 @@
+{
+  "material_id": "gallium_v1",
+  "name": "Gallium, VERIFICATION benchmark only",
+  "class": "verification",
+  "not_a_part_material": true,
+  "purpose": "canonical melting-with-natural-convection benchmark (Gau-Viskanta / Brent-Voller-Reid)",
+  "units": "SI",
+  "rho_kg_m3": 6093.0,
+  "lambda_W_mK": 32.0,
+  "cp_J_kgK": 381.5,
+  "latent_heat_J_kg": 80160.0,
+  "T_melt_K": 302.93,
+  "mu_Pa_s": 1.81e-3,
+  "nu_m2_s": 2.97e-7,
+  "alpha_m2_s": 1.377e-5,
+  "Pr": 0.0216,
+  "beta_1_K": 1.2e-4,
+  "benchmark": {
+    "domain_m": [0.0889, 0.0635],
+    "dimension": "2D, x horizontal, y vertical, gravity -y",
+    "T_initial_K": 301.45,
+    "T_hot_wall_K": 311.15,
+    "T_cold_wall_K": 301.45,
+    "top_bottom": "adiabatic",
+    "t_end_s": 1200.0,
+    "dt_s": [0.2, 1.0],
+    "mesh_series": [[60, 45], [120, 90], [240, 180]],
+    "mushy_C_series_kg_m3s": [1.0e5, 1.0e6, 1.0e7, 1.0e8],
+    "acceptance": "front position within 10 percent of digitized published curves at >= 4 times"
+  },
+  "open_sources_to_verify": [
+    "Gau C., Viskanta R. (1986), J. Heat Transfer",
+    "Brent A.D., Voller V.R., Reid K.J. (1988), Numer. Heat Transfer"
+  ]
+}

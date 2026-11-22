@@ -1,0 +1,29 @@
+{
+  "regime_id": "REG-02",
+  "case_id": "R01",
+  "description": "model local repair: bore cladding over a 30 deg sector",
+  "units": "SI",
+  "material": {"substrate_id": "steel_1045_v1", "clad_id": "steel_316L_v1"},
+  "laser": {
+    "power_W": 1200.0, "wavelength_nm": 1070.0,
+    "spot_convention": "1/e2_intensity", "spot_diameter_m": 0.0030,
+    "beam_radius_m": 0.0015, "profile": "gaussian",
+    "absorptivity": 0.35, "absorption_layer_m": 2.0e-4, "tilt_deg": 0.0
+  },
+  "motion": {
+    "speed_m_s": 0.010,
+    "path_type": "circle",
+    "R_in_m": 0.275,
+    "omega_rad_s": 0.0363636,
+    "omega_deg_s": 2.0833,
+    "tracks": [{"track_id": 1, "t_on_s": 0.0, "t_off_s": 14.4,
+                "z_m": 0.020, "phi_start_rad": 0.0, "phi_end_rad": 0.5235988}],
+    "pitch_m": 0.0015
+  },
+  "thermal": {
+    "preheat_K": 423.15, "ambient_K": 293.15,
+    "h_W_m2K": 15.0, "emissivity": 0.7,
+    "t_end_s": 200.0,
+    "end_condition": "T_max_K <= ambient_K + 2"
+  }
+}

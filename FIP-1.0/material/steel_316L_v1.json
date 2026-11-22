@@ -1,0 +1,29 @@
+{
+  "material_id": "steel_316L_v1",
+  "name": "Model austenitic stainless steel, 316L type (clad layer)",
+  "class": "steel",
+  "model_values": true,
+  "units": "SI",
+  "role": "clad layer only, no martensitic transformation",
+  "rho_kg_m3": 7950.0,
+  "T_K":           [293.15, 673.15, 1073.15, 1473.15],
+  "lambda_W_mK":   [15.0, 20.0, 25.0, 28.0],
+  "cp_J_kgK":      [500.0, 560.0, 620.0, 660.0],
+  "E_Pa":          [1.95e11, 1.70e11, 1.30e11, 4.0e10],
+  "sigma_y_Pa":    [2.50e8, 1.90e8, 1.10e8, 2.0e7],
+  "alpha_sec_1_K": [16.5e-6, 17.5e-6, 18.5e-6, 19.0e-6],
+  "alpha_type": "secant",
+  "nu": 0.30,
+  "T_melt_K": 1673.15,
+  "latent_heat_J_kg": 2.6e5,
+  "HV_typical": 200.0,
+  "clad_thickness_m": 8.0e-4,
+  "clad_thickness_series_m": [6.0e-4, 8.0e-4, 1.0e-3],
+  "clad_thickness_basis": "model assumption, sensitivity mandatory",
+  "mismatch_note": "soft austenitic layer next to potentially hard HAZ: strain localizes in the clad, crack initiates in the HAZ",
+  "open_sources_to_verify": [
+    "ASM Handbook Vol.1",
+    "open laser-DED literature on 316L single tracks",
+    "NIST AM-Bench public datasets (316L)"
+  ]
+}
