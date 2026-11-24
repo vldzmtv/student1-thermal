@@ -1,0 +1,26 @@
+plate count              PASS 72900
+plate shape              PASS (81, 25, 36)
+ring count               PASS 37800
+ring shape               PASS (25, 72, 21)
+times s1                 PASS 71
+times s2                 PASS 56
+times ring               PASS 66
+mask 2D                  PASS 2015
+mask 3D                  PASS 26195
+mask subset              PASS 
+plate z max              PASS 
+ring r range             PASS 
+steel card keys          PASS 
+alpha ratio 2.13         PASS 2.125
+nu/Pr = alpha_l          PASS 
+stefan lambda            PASS 0.3967
+stefan front 1s          PASS 1.963 mm
+sahoo sign 20ppm         PASS -1.65e-05
+sahoo sign 60ppm         PASS +2.55e-04
+km full martensite       PASS 0.964
+CE 0.628                 PASS 0.6283
+Ms 322 C                 PASS 321.9 C
+ovality unit test        PASS 1.200e-04 vs 1.200e-04
+manifest integrity       PASS []
+
+FIP RESULT: OK

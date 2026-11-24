@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CASE_DIR="$ROOT_DIR/cases/00_adiabatic_cube"
+
+cd "$CASE_DIR"
+
+foamListTimes -noZero -rm
+
+rm -rf postProcessing
+rm -rf constant/polyMesh
+rm -f "$ROOT_DIR/results/temperature.csv"
+rm -f "$ROOT_DIR/results/temperature_check.csv"
+rm -f "$ROOT_DIR/results/T_vs_time.png"
+
+echo "Allclean completed."

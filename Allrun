@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CASE_DIR="$ROOT_DIR/cases/00_adiabatic_cube"
+LOG_DIR="$CASE_DIR/logs"
+
+mkdir -p "$LOG_DIR"
+
+if [[ -z "${WM_PROJECT_DIR:-}" ]]; then
+    echo "ERROR: OpenFOAM environment is not loaded."
+    echo "Source the OpenFOAM bashrc before running Allrun."
+    exit 1
+fi
+
+PYTHON="${PYTHON:-$ROOT_DIR/.venv/bin/python}"
+
+if [[ ! -x "$PYTHON" ]]; then
+    echo "ERROR: Python virtual environment not found."
+    echo "Create .venv and install env/pip-freeze.txt first."
+    exit 1
+fi
+
+cd "$CASE_DIR"
+
+echo "=== 1. blockMesh ==="
+blockMesh > "$LOG_DIR/log.blockMesh" 2>&1
+
+echo "=== 2. checkMesh ==="
+checkMesh > "$LOG_DIR/log.checkMesh" 2>&1
+
+echo "=== 3. laplacianFoam ==="
+laplacianFoam > "$LOG_DIR/laplacianFoam.log" 2>&1
+
+echo "=== 4. Extract temperature ==="
+"$PYTHON" "$ROOT_DIR/scripts/extract_temperature.py" \
+    "$CASE_DIR" \
+    --output "$ROOT_DIR/results/temperature.csv"
+
+echo "=== 5. Plot temperature ==="
+cd "$ROOT_DIR"
+"$PYTHON" "$ROOT_DIR/scripts/plot_temperature.py" \
+    --csv "$ROOT_DIR/results/temperature.csv" \
+    --material "$ROOT_DIR/FIP-1.0/material/steel_1045_v1.json" \
+    --regime "$ROOT_DIR/FIP-1.0/regimes/REG-01.json" \
+    --block-mesh "$CASE_DIR/system/blockMeshDict" \
+    --output "$ROOT_DIR/results/T_vs_time.png"
+
+echo
+echo "Allrun completed successfully."

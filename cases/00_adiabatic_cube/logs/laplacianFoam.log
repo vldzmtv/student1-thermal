@@ -8,12 +8,12 @@
 Build  : _be01ca78-20240625 OPENFOAM=2406 version=2406
 Arch   : "LSB;label=32;scalar=64"
 Exec   : laplacianFoam
-Date   : Nov 22 2026
-Time   : 19:13:38
-Host   : c85dcda481d6
-PID    : 25329
+Date   : Nov 24 2026
+Time   : 17:39:01
+Host   : d5d3fd38f397
+PID    : 34851
 I/O    : uncollated
-Case   : /home/openfoam/S1-work/case_00_adiabatic_cube
+Case   : /home/openfoam/S1-work/cases/00_adiabatic_cube
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -42,503 +42,543 @@ Calculating temperature distribution
 
 Time = 0.01
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.03 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.35000157381e-12, No Iterations 6
+ExecutionTime = 0.15 s  ClockTime = 0 s
 
 Time = 0.02
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.03 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999988, Final residual = 9.35000157395e-12, No Iterations 6
+ExecutionTime = 0.15 s  ClockTime = 0 s
 
 Time = 0.03
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.03 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999984, Final residual = 9.35000157408e-12, No Iterations 6
+ExecutionTime = 0.16 s  ClockTime = 0 s
 
 Time = 0.04
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.03 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999979, Final residual = 9.35000157413e-12, No Iterations 6
+ExecutionTime = 0.16 s  ClockTime = 0 s
 
 Time = 0.05
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.03 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999974, Final residual = 9.35000157415e-12, No Iterations 6
+ExecutionTime = 0.16 s  ClockTime = 0 s
 
 Time = 0.06
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.03 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999971, Final residual = 9.35000157416e-12, No Iterations 6
+ExecutionTime = 0.16 s  ClockTime = 0 s
 
 Time = 0.07
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.03 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999967, Final residual = 9.35000157415e-12, No Iterations 6
+ExecutionTime = 0.16 s  ClockTime = 0 s
 
 Time = 0.08
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.03 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999964, Final residual = 9.35000157413e-12, No Iterations 6
+ExecutionTime = 0.16 s  ClockTime = 0 s
 
 Time = 0.09
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.03 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999962, Final residual = 9.35000157413e-12, No Iterations 6
+ExecutionTime = 0.16 s  ClockTime = 0 s
 
 Time = 0.1
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.04 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999959, Final residual = 9.3500015741e-12, No Iterations 6
+ExecutionTime = 0.17 s  ClockTime = 0 s
+
+fieldMinMax temperatureMinMax write:
+    min(T) = 434.533656322 in cell 822 at location (0.0025 0.0025 0.0085)
+    max(T) = 434.533656322 in cell 884 at location (0.0045 0.0085 0.0085)
 
 Time = 0.11
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.05 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999956, Final residual = 9.35000157408e-12, No Iterations 6
+ExecutionTime = 0.17 s  ClockTime = 0 s
 
 Time = 0.12
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.05 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999953, Final residual = 9.35000157406e-12, No Iterations 6
+ExecutionTime = 0.17 s  ClockTime = 0 s
 
 Time = 0.13
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.05 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999952, Final residual = 9.35000157404e-12, No Iterations 6
+ExecutionTime = 0.17 s  ClockTime = 0 s
 
 Time = 0.14
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.05 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.99999999995, Final residual = 9.35000157402e-12, No Iterations 6
+ExecutionTime = 0.17 s  ClockTime = 0 s
 
 Time = 0.15
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.05 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999948, Final residual = 9.35000157401e-12, No Iterations 6
+ExecutionTime = 0.18 s  ClockTime = 0 s
 
 Time = 0.16
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.05 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999947, Final residual = 9.35000157399e-12, No Iterations 6
+ExecutionTime = 0.18 s  ClockTime = 0 s
 
 Time = 0.17
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.05 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999944, Final residual = 9.35000157397e-12, No Iterations 6
+ExecutionTime = 0.18 s  ClockTime = 0 s
 
 Time = 0.18
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.05 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999942, Final residual = 9.35000157395e-12, No Iterations 6
+ExecutionTime = 0.18 s  ClockTime = 0 s
 
 Time = 0.19
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.05 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999941, Final residual = 9.35000157395e-12, No Iterations 6
+ExecutionTime = 0.18 s  ClockTime = 0 s
 
 Time = 0.2
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.06 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999939, Final residual = 9.35000157393e-12, No Iterations 6
+ExecutionTime = 0.19 s  ClockTime = 0 s
+
+fieldMinMax temperatureMinMax write:
+    min(T) = 445.917312644 in cell 282 at location (0.0025 0.0085 0.0025)
+    max(T) = 445.917312644 in cell 488 at location (0.0085 0.0085 0.0045)
 
 Time = 0.21
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.06 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999938, Final residual = 9.35000157391e-12, No Iterations 6
+ExecutionTime = 0.19 s  ClockTime = 0 s
 
 Time = 0.22
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.06 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999935, Final residual = 9.35000157389e-12, No Iterations 6
+ExecutionTime = 0.19 s  ClockTime = 0 s
 
 Time = 0.23
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.06 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999934, Final residual = 9.35000157388e-12, No Iterations 6
+ExecutionTime = 0.19 s  ClockTime = 0 s
 
 Time = 0.24
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.06 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999933, Final residual = 9.35000157387e-12, No Iterations 6
+ExecutionTime = 0.19 s  ClockTime = 0 s
 
 Time = 0.25
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.06 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999933, Final residual = 9.35000157386e-12, No Iterations 6
+ExecutionTime = 0.19 s  ClockTime = 0 s
 
 Time = 0.26
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.06 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.99999999993, Final residual = 9.35000157384e-12, No Iterations 6
+ExecutionTime = 0.19 s  ClockTime = 0 s
 
 Time = 0.27
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.06 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999928, Final residual = 9.35000157382e-12, No Iterations 6
+ExecutionTime = 0.19 s  ClockTime = 0 s
 
 Time = 0.28
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.06 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999928, Final residual = 9.35000157382e-12, No Iterations 6
+ExecutionTime = 0.19 s  ClockTime = 0 s
 
 Time = 0.29
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.06 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999927, Final residual = 9.35000157381e-12, No Iterations 6
+ExecutionTime = 0.19 s  ClockTime = 0 s
 
 Time = 0.3
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.07 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999925, Final residual = 9.3500015738e-12, No Iterations 6
+ExecutionTime = 0.2 s  ClockTime = 0 s
+
+fieldMinMax temperatureMinMax write:
+    min(T) = 457.300968966 in cell 822 at location (0.0025 0.0025 0.0085)
+    max(T) = 457.300968966 in cell 848 at location (0.0085 0.0045 0.0085)
 
 Time = 0.31
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.07 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999924, Final residual = 9.35000157378e-12, No Iterations 6
+ExecutionTime = 0.2 s  ClockTime = 0 s
 
 Time = 0.32
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.07 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999923, Final residual = 9.35000157378e-12, No Iterations 6
+ExecutionTime = 0.2 s  ClockTime = 0 s
 
 Time = 0.33
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.07 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999921, Final residual = 9.35000157375e-12, No Iterations 6
+ExecutionTime = 0.2 s  ClockTime = 0 s
 
 Time = 0.34
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.07 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999921, Final residual = 9.35000157375e-12, No Iterations 6
+ExecutionTime = 0.2 s  ClockTime = 0 s
 
 Time = 0.35
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.07 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.99999999992, Final residual = 9.35000157375e-12, No Iterations 6
+ExecutionTime = 0.2 s  ClockTime = 0 s
 
 Time = 0.36
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.07 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999918, Final residual = 9.35000157373e-12, No Iterations 6
+ExecutionTime = 0.2 s  ClockTime = 0 s
 
 Time = 0.37
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.07 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999917, Final residual = 9.35000157371e-12, No Iterations 6
+ExecutionTime = 0.2 s  ClockTime = 0 s
 
 Time = 0.38
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.07 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999916, Final residual = 9.35000157371e-12, No Iterations 6
+ExecutionTime = 0.2 s  ClockTime = 0 s
 
 Time = 0.39
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.07 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999917, Final residual = 9.35000157371e-12, No Iterations 6
+ExecutionTime = 0.2 s  ClockTime = 0 s
 
 Time = 0.4
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.08 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999914, Final residual = 9.35000157369e-12, No Iterations 6
+ExecutionTime = 0.2 s  ClockTime = 1 s
+
+fieldMinMax temperatureMinMax write:
+    min(T) = 468.684625288 in cell 390 at location (0.0005 0.0095 0.0035)
+    max(T) = 468.684625288 in cell 848 at location (0.0085 0.0045 0.0085)
 
 Time = 0.41
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.08 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999913, Final residual = 9.35000157368e-12, No Iterations 6
+ExecutionTime = 0.21 s  ClockTime = 1 s
 
 Time = 0.42
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.08 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999913, Final residual = 9.35000157368e-12, No Iterations 6
+ExecutionTime = 0.21 s  ClockTime = 1 s
 
 Time = 0.43
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.08 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999912, Final residual = 9.35000157367e-12, No Iterations 6
+ExecutionTime = 0.21 s  ClockTime = 1 s
 
 Time = 0.44
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.08 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999911, Final residual = 9.35000157366e-12, No Iterations 6
+ExecutionTime = 0.21 s  ClockTime = 1 s
 
 Time = 0.45
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.08 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999909, Final residual = 9.35000157365e-12, No Iterations 6
+ExecutionTime = 0.21 s  ClockTime = 1 s
 
 Time = 0.46
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.08 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.99999999991, Final residual = 9.35000157365e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
 
 Time = 0.47
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.08 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999909, Final residual = 9.35000157364e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
 
 Time = 0.48
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.08 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999908, Final residual = 9.35000157363e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
 
 Time = 0.49
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.08 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999907, Final residual = 9.35000157362e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
 
 Time = 0.5
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.09 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999907, Final residual = 9.35000157362e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
+
+fieldMinMax temperatureMinMax write:
+    min(T) = 480.06828161 in cell 390 at location (0.0005 0.0095 0.0035)
+    max(T) = 480.06828161 in cell 884 at location (0.0045 0.0085 0.0085)
 
 Time = 0.51
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.09 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999906, Final residual = 9.35000157361e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
 
 Time = 0.52
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.09 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999905, Final residual = 9.35000157361e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
 
 Time = 0.53
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.09 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999905, Final residual = 9.3500015736e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
 
 Time = 0.54
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.09 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999905, Final residual = 9.3500015736e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
 
 Time = 0.55
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.09 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999904, Final residual = 9.35000157359e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
 
 Time = 0.56
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.09 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999903, Final residual = 9.35000157359e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
 
 Time = 0.57
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.09 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999902, Final residual = 9.35000157358e-12, No Iterations 6
+ExecutionTime = 0.22 s  ClockTime = 1 s
 
 Time = 0.58
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.09 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999902, Final residual = 9.35000157358e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
 
 Time = 0.59
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.09 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999901, Final residual = 9.35000157357e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
 
 Time = 0.6
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.1 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999901, Final residual = 9.35000157357e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
+
+fieldMinMax temperatureMinMax write:
+    min(T) = 491.451937932 in cell 390 at location (0.0005 0.0095 0.0035)
+    max(T) = 491.451937932 in cell 997 at location (0.0075 0.0095 0.0095)
 
 Time = 0.61
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.1 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.9999999999, Final residual = 9.35000157356e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
 
 Time = 0.62
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.1 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999899, Final residual = 9.35000157355e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
 
 Time = 0.63
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.1 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999899, Final residual = 9.35000157355e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
 
 Time = 0.64
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.1 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999899, Final residual = 9.35000157355e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
 
 Time = 0.65
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.11 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999898, Final residual = 9.35000157354e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
 
 Time = 0.66
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.11 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999898, Final residual = 9.35000157354e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
 
 Time = 0.67
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.11 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999897, Final residual = 9.35000157353e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
 
 Time = 0.68
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.11 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999897, Final residual = 9.35000157353e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
 
 Time = 0.69
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.11 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999897, Final residual = 9.35000157353e-12, No Iterations 6
+ExecutionTime = 0.23 s  ClockTime = 1 s
 
 Time = 0.7
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.11 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999896, Final residual = 9.35000157352e-12, No Iterations 6
+ExecutionTime = 0.25 s  ClockTime = 1 s
+
+fieldMinMax temperatureMinMax write:
+    min(T) = 502.835594254 in cell 390 at location (0.0005 0.0095 0.0035)
+    max(T) = 502.835594254 in cell 997 at location (0.0075 0.0095 0.0095)
 
 Time = 0.71
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.12 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999895, Final residual = 9.35000157352e-12, No Iterations 6
+ExecutionTime = 0.25 s  ClockTime = 1 s
 
 Time = 0.72
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.12 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999895, Final residual = 9.35000157352e-12, No Iterations 6
+ExecutionTime = 0.25 s  ClockTime = 1 s
 
 Time = 0.73
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.12 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999895, Final residual = 9.35000157351e-12, No Iterations 6
+ExecutionTime = 0.25 s  ClockTime = 1 s
 
 Time = 0.74
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.12 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999894, Final residual = 9.3500015735e-12, No Iterations 6
+ExecutionTime = 0.25 s  ClockTime = 1 s
 
 Time = 0.75
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.12 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999894, Final residual = 9.3500015735e-12, No Iterations 6
+ExecutionTime = 0.25 s  ClockTime = 1 s
 
 Time = 0.76
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.12 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999893, Final residual = 9.3500015735e-12, No Iterations 6
+ExecutionTime = 0.25 s  ClockTime = 1 s
 
 Time = 0.77
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.12 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999893, Final residual = 9.3500015735e-12, No Iterations 6
+ExecutionTime = 0.25 s  ClockTime = 1 s
 
 Time = 0.78
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.12 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999892, Final residual = 9.35000157349e-12, No Iterations 6
+ExecutionTime = 0.25 s  ClockTime = 1 s
 
 Time = 0.79
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.12 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999892, Final residual = 9.35000157348e-12, No Iterations 6
+ExecutionTime = 0.26 s  ClockTime = 1 s
 
 Time = 0.8
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.13 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999892, Final residual = 9.35000157348e-12, No Iterations 6
+ExecutionTime = 0.26 s  ClockTime = 1 s
+
+fieldMinMax temperatureMinMax write:
+    min(T) = 514.219250576 in cell 390 at location (0.0005 0.0095 0.0035)
+    max(T) = 514.219250576 in cell 799 at location (0.0095 0.0095 0.0075)
 
 Time = 0.81
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.13 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999892, Final residual = 9.35000157349e-12, No Iterations 6
+ExecutionTime = 0.26 s  ClockTime = 1 s
 
 Time = 0.82
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.13 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999892, Final residual = 9.35000157348e-12, No Iterations 6
+ExecutionTime = 0.26 s  ClockTime = 1 s
 
 Time = 0.83
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.13 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.99999999989, Final residual = 9.35000157347e-12, No Iterations 6
+ExecutionTime = 0.27 s  ClockTime = 1 s
 
 Time = 0.84
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.13 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.99999999989, Final residual = 9.35000157347e-12, No Iterations 6
+ExecutionTime = 0.27 s  ClockTime = 1 s
 
 Time = 0.85
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.13 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999891, Final residual = 9.35000157347e-12, No Iterations 6
+ExecutionTime = 0.27 s  ClockTime = 1 s
 
 Time = 0.86
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.13 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.99999999989, Final residual = 9.35000157347e-12, No Iterations 6
+ExecutionTime = 0.27 s  ClockTime = 1 s
 
 Time = 0.87
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.13 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999889, Final residual = 9.35000157346e-12, No Iterations 6
+ExecutionTime = 0.27 s  ClockTime = 1 s
 
 Time = 0.88
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.13 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999889, Final residual = 9.35000157346e-12, No Iterations 6
+ExecutionTime = 0.27 s  ClockTime = 1 s
 
 Time = 0.89
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.13 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.99999999989, Final residual = 9.35000157347e-12, No Iterations 6
+ExecutionTime = 0.27 s  ClockTime = 1 s
 
 Time = 0.9
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.15 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999889, Final residual = 9.35000157346e-12, No Iterations 6
+ExecutionTime = 0.28 s  ClockTime = 1 s
+
+fieldMinMax temperatureMinMax write:
+    min(T) = 525.602906898 in cell 390 at location (0.0005 0.0095 0.0035)
+    max(T) = 525.602906898 in cell 799 at location (0.0095 0.0095 0.0075)
 
 Time = 0.91
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.15 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999889, Final residual = 9.35000157345e-12, No Iterations 6
+ExecutionTime = 0.28 s  ClockTime = 1 s
 
 Time = 0.92
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.15 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999889, Final residual = 9.35000157345e-12, No Iterations 6
+ExecutionTime = 0.28 s  ClockTime = 1 s
 
 Time = 0.93
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.15 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999889, Final residual = 9.35000157346e-12, No Iterations 6
+ExecutionTime = 0.28 s  ClockTime = 1 s
 
 Time = 0.94
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.15 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999888, Final residual = 9.35000157345e-12, No Iterations 6
+ExecutionTime = 0.28 s  ClockTime = 1 s
 
 Time = 0.95
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.15 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999888, Final residual = 9.35000157344e-12, No Iterations 6
+ExecutionTime = 0.28 s  ClockTime = 1 s
 
 Time = 0.96
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.15 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999888, Final residual = 9.35000157344e-12, No Iterations 6
+ExecutionTime = 0.28 s  ClockTime = 1 s
 
 Time = 0.97
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.15 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999888, Final residual = 9.35000157344e-12, No Iterations 6
+ExecutionTime = 0.28 s  ClockTime = 1 s
 
 Time = 0.98
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.15 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999888, Final residual = 9.35000157344e-12, No Iterations 6
+ExecutionTime = 0.28 s  ClockTime = 1 s
 
 Time = 0.99
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.15 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999887, Final residual = 9.35000157344e-12, No Iterations 6
+ExecutionTime = 0.28 s  ClockTime = 1 s
 
 Time = 1
 
-DICPCG:  Solving for T, Initial residual = 1, Final residual = 9.3500016e-12, No Iterations 6
-ExecutionTime = 0.16 s  ClockTime = 0 s
+DICPCG:  Solving for T, Initial residual = 0.999999999886, Final residual = 9.35000157343e-12, No Iterations 6
+ExecutionTime = 0.29 s  ClockTime = 1 s
+
+fieldMinMax temperatureMinMax write:
+    min(T) = 536.98656322 in cell 390 at location (0.0005 0.0095 0.0035)
+    max(T) = 536.98656322 in cell 997 at location (0.0075 0.0095 0.0095)
 
 End
 

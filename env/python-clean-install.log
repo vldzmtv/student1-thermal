@@ -1,0 +1,77 @@
+=== CLEAN PYTHON ENVIRONMENT VERIFICATION ===
+Tue Nov 24 15:06:39 UTC 2026
+
+=== CREATE VIRTUAL ENVIRONMENT ===
+
+=== PYTHON VERSION ===
+Python 3.12.3
+
+=== PIP VERSION ===
+pip 24.0 from /home/openfoam/S1-work/.venv-clean/lib/python3.12/site-packages/pip (python 3.12)
+
+=== INSTALL REQUIREMENTS ===
+Collecting contourpy==1.4.0 (from -r env/pip-freeze.txt (line 1))
+  Using cached contourpy-1.4.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl.metadata (3.8 kB)
+Collecting cycler==0.12.1 (from -r env/pip-freeze.txt (line 2))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools==4.68.0 (from -r env/pip-freeze.txt (line 3))
+  Using cached fonttools-4.68.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (139 kB)
+Collecting kiwisolver==1.5.1 (from -r env/pip-freeze.txt (line 4))
+  Using cached kiwisolver-1.5.1-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl.metadata (5.2 kB)
+Collecting matplotlib==3.11.2 (from -r env/pip-freeze.txt (line 5))
+  Using cached matplotlib-3.11.2-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl.metadata (80 kB)
+Collecting numpy==2.5.5 (from -r env/pip-freeze.txt (line 6))
+  Using cached numpy-2.5.5-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (6.6 kB)
+Collecting packaging==26.3 (from -r env/pip-freeze.txt (line 7))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pandas==3.1.1 (from -r env/pip-freeze.txt (line 8))
+  Using cached pandas-3.1.1-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl.metadata (16 kB)
+Collecting pillow==13.0.0 (from -r env/pip-freeze.txt (line 9))
+  Using cached pillow-13.0.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (9.1 kB)
+Collecting pyparsing==3.3.3 (from -r env/pip-freeze.txt (line 10))
+  Using cached pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting python-dateutil==4.0.0 (from -r env/pip-freeze.txt (line 11))
+  Using cached python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting scipy==1.18.1 (from -r env/pip-freeze.txt (line 12))
+  Using cached scipy-1.18.1-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (62 kB)
+Collecting tzdata==2026.6 (from -r env/pip-freeze.txt (line 13))
+  Using cached tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Using cached contourpy-1.4.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl (356 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.68.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (5.5 MB)
+Using cached kiwisolver-1.5.1-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl (1.3 MB)
+Using cached matplotlib-3.11.2-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl (10.7 MB)
+Using cached numpy-2.5.5-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (15.3 MB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pandas-3.1.1-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl (11.5 MB)
+Using cached pillow-13.0.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (6.5 MB)
+Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Using cached python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+Using cached scipy-1.18.1-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (34.0 MB)
+Using cached tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Installing collected packages: tzdata, pyparsing, pillow, packaging, numpy, kiwisolver, fonttools, cycler, scipy, python-dateutil, contourpy, pandas, matplotlib
+Successfully installed contourpy-1.4.0 cycler-0.12.1 fonttools-4.68.0 kiwisolver-1.5.1 matplotlib-3.11.2 numpy-2.5.5 packaging-26.3 pandas-3.1.1 pillow-13.0.0 pyparsing-3.3.3 python-dateutil-4.0.0 scipy-1.18.1 tzdata-2026.6
+
+=== DEPENDENCY CHECK ===
+No broken requirements found.
+
+=== FREEZE COMPARISON ===
+pip freeze matches env/pip-freeze.txt
+
+=== INSTALLED PACKAGES ===
+Package         Version
+--------------- -------
+contourpy       1.4.0
+cycler          0.12.1
+fonttools       4.68.0
+kiwisolver      1.5.1
+matplotlib      3.11.2
+numpy           2.5.5
+packaging       26.3
+pandas          3.1.1
+pillow          13.0.0
+pip             24.0
+pyparsing       3.3.3
+python-dateutil 4.0.0
+scipy           1.18.1
+tzdata          2026.6

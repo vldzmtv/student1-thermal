@@ -3,6 +3,8 @@ processor*/
 postProcessing/
 dynamicCode/
 log.*
+!env/verification_cavity/log.*
+!cases/*/logs/*
 *.vtk
 *.foam
 !0/
@@ -12,3 +14,6 @@ out/*/fields/
 out/*/grid_T.npz
 .DS_Store
 !cases/[0-9][0-9]_*/
+**/constant/polyMesh/
+.venv/
+.venv-clean/

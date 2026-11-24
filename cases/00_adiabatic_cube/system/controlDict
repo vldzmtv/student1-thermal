@@ -16,8 +16,19 @@ writeControl timeStep;
 writeInterval 10;
 purgeWrite 0;
 writeFormat ascii;
-writePrecision 8;
+writePrecision 12;
 writeCompression off;
 timeFormat general;
 timePrecision 6;
 runTimeModifiable true;
+functions
+{
+    temperatureMinMax
+    {
+        type            fieldMinMax;
+        libs            (fieldFunctionObjects);
+        fields          (T);
+        location        yes;
+        writeControl    writeTime;
+    }
+}
