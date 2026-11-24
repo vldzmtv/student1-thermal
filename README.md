@@ -132,6 +132,19 @@ echo "$WM_PROJECT_VERSION"
 
 ### 3.3. Настройка Python
 
+В исходном Docker-образе `opencfd/openfoam-dev:2406` Python может отсутствовать. Перед созданием виртуального окружения необходимо установить системные пакеты `python3` и `python3-venv`.
+
+Установка выполняется от имени `root` на хостовой системе:
+
+```bash
+docker exec -u root openfoam2406-s1 bash -c '
+apt-get update
+apt-get install -y python3 python3-venv
+'
+```
+
+После установки перейти в контейнер под пользователем `ubuntu` и перейти в корневую директорию проекта.
+
 Создать виртуальное окружение:
 
 ```bash
@@ -150,6 +163,14 @@ python3 -m venv .venv
 ```bash
 .venv/bin/python -m pip check
 ```
+
+Ожидаемый результат:
+
+```text
+No broken requirements found.
+```
+
+Виртуальное окружение создаётся отдельно внутри Docker-контейнера и не является общим с окружением WSL2.
 
 Если контейнер уже создан и запущен, повторно выполнять `docker run` не нужно. Для повторного входа используется команда `docker exec`.
 
@@ -277,7 +298,7 @@ FIP RESULT: OK
   "tag": "S1-Case-00",
   "openfoam_version": "v2406",
   "run_date": "2026-11-24",
-  "source_commit": "6b65fb198d083e8f71d3ba4f64a7a6b8db2aa946",
+  "source_commit": "9387c42bd9d36cb8300b6cc63e706596ba5ca9b4",
   "case": "00_adiabatic_cube"
 }
 ```
