@@ -2,6 +2,6 @@
   "tag": "S1-Case-00",
   "openfoam_version": "v2406",
   "run_date": "2026-11-24",
-  "source_commit": "6b65fb198d083e8f71d3ba4f64a7a6b8db2aa946",
+  "source_commit": "9387c42bd9d36cb8300b6cc63e706596ba5ca9b4",
   "case": "00_adiabatic_cube"
 }
